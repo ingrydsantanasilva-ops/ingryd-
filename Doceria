@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doces Sonhos</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#fff7f8;
+color:#333;
+}
+
+header{
+background:linear-gradient(135deg,#ff1493,#ff69b4);
+color:white;
+text-align:center;
+padding:60px 20px;
+}
+
+header h1{
+font-size:60px;
+}
+
+header p{
+font-size:28px;
+margin-top:15px;
+}
+
+nav{
+background:#ff1493;
+padding:20px;
+position:sticky;
+top:0;
+text-align:center;
+z-index:999;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:28px;
+margin:20px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#ffe4e1;
+}
+
+section{
+max-width:1200px;
+margin:auto;
+padding:60px 25px;
+}
+
+h2{
+font-size:45px;
+color:#ff1493;
+margin-bottom:30px;
+text-align:center;
+}
+
+p{
+font-size:24px;
+line-height:1.8;
+}
+
+.card{
+background:white;
+margin:20px 0;
+padding:20px;
+border-radius:20px;
+box-shadow:0 0 15px rgba(0,0,0,.15);
+}
+
+summary{
+font-size:32px;
+font-weight:bold;
+cursor:pointer;
+padding:15px;
+color:#ff1493;
+}
+
+ul{
+margin-top:20px;
+padding-left:35px;
+}
+
+li{
+font-size:25px;
+margin:15px 0;
+}
+
+button{
+background:#25D366;
+color:white;
+border:none;
+padding:12px 25px;
+border-radius:10px;
+font-size:20px;
+cursor:pointer;
+margin-left:10px;
+}
+
+button:hover{
+background:#1fa955;
+}
+
+footer{
+background:#ff1493;
+color:white;
+text-align:center;
+padding:40px;
+font-size:22px;
+margin-top:40px;
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+width:70px;
+height:70px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:35px;
+text-decoration:none;
+}
+
+input{
+width:100%;
+padding:18px;
+font-size:22px;
+border-radius:10px;
+border:2px solid #ff69b4;
+margin-bottom:30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🍰 Doces Sonhos</h1>
+
+<p>Transformando momentos especiais em doces lembranças.</p>
+
+</header>
+
+<nav>
+
+<a href="#sobre">Sobre</a>
+
+<a href="#produtos">Produtos</a>
+
+<a href="#encomendas">Encomendas</a>
+
+<a href="#contato">Contato</a>
+
+</nav>
+
+<section id="sobre">
+
+<h2>Sobre Nós</h2>
+
+<p>
+
+A Doces Sonhos prepara bolos, tortas, brigadeiros, brownies, doces tradicionais, doces fritos e muito mais.
+
+Todos os produtos são feitos com ingredientes de qualidade e muito carinho para tornar cada momento ainda mais especial.
+
+</p>
+
+</section>
+
+<section id="produtos">
+
+<h2>Nosso Cardápio</h2>
+
+<input type="text" id="pesquisa" placeholder="🔍 Pesquise um doce...">
+
+<!-- AQUI ENTRARÃO TODOS OS DOCES -->
+
+</section><details class="card">
+<summary>🍫 Sobremesas de Chocolate</summary>
+
+<ul>
+<li>Brigadeiro — R$ 1,50 ou R$ 4,00 <button onclick="pedir('Brigadeiro')">Pedir</button></li>
+<li>Brownie — R$ 6,50 ou R$ 15,00 <button onclick="pedir('Brownie')">Pedir</button></li>
+<li>Mousse de Chocolate — R$ 25,00 ou R$ 40,00 <button onclick="pedir('Mousse de Chocolate')">Pedir</button></li>
+<li>Bolo de Chocolate — R$ 15,00 a R$ 220,00 <button onclick="pedir('Bolo de Chocolate')">Pedir</button></li>
+<li>Trufa de Chocolate — R$ 3,50 a R$ 8,90 <button onclick="pedir('Trufa de Chocolate')">Pedir</button></li>
+<li>Ganache — R$ 35,00 ou R$ 60,00 <button onclick="pedir('Ganache')">Pedir</button></li>
+<li>Fondue de Chocolate — R$ 20,00 ou R$ 69,00 <button onclick="pedir('Fondue de Chocolate')">Pedir</button></li>
+<li>Torta de Chocolate — R$ 40,00 a R$ 350,00 <button onclick="pedir('Torta de Chocolate')">Pedir</button></li>
+<li>Chocolate Quente — R$ 8,00 a R$ 15,00 <button onclick="pedir('Chocolate Quente')">Pedir</button></li>
+<li>Cupcake de Chocolate — R$ 4,50 <button onclick="pedir('Cupcake de Chocolate')">Pedir</button></li>
+</ul>
+
+</details>
+
+<details class="card">
+
+<summary>🎂 Bolos e Tortas</summary>
+
+<ul>
+
+<li>Cheesecake — R$ 20,00 ou R$ 35,00 <button onclick="pedir('Cheesecake')">Pedir</button></li>
+
+<li>Torta de Limão — R$ 6,00 ou R$ 15,00 <button onclick="pedir('Torta de Limão')">Pedir</button></li>
+
+<li>Red Velvet — R$ 13,00 ou R$ 20,00 <button onclick="pedir('Red Velvet')">Pedir</button></li>
+
+<li>Bolo de Cenoura — R$ 30,00 ou R$ 48,00 <button onclick="pedir('Bolo de Cenoura')">Pedir</button></li>
+
+<li>Bolo de Aniversário — Consulte <button onclick="pedir('Bolo de Aniversário')">Pedir</button></li>
+
+<li>Pavê — R$ 20,00 <button onclick="pedir('Pavê')">Pedir</button></li>
+
+<li>Tiramisu — R$ 27,00 ou R$ 32,00 <button onclick="pedir('Tiramisu')">Pedir</button></li>
+
+<li>Torta de Maçã — R$ 35,00 ou R$ 45,00 <button onclick="pedir('Torta de Maçã')">Pedir</button></li>
+
+<li>Bolo de Coco — R$ 50,00 ou R$ 115,00 <button onclick="pedir('Bolo de Coco')">Pedir</button></li>
+
+<li>Bolo de Fubá — R$ 20,00 ou R$ 35,00 <button onclick="pedir('Bolo de Fubá')">Pedir</button></li>
+
+</ul>
+
+</details>
+
+<details class="card">
+
+<summary>🍩 Doces Fritos</summary>
+
+<ul>
+
+<li>Churros — R$ 7,00 ou R$ 13,00 <button onclick="pedir('Churros')">Pedir</button></li>
+
+<li>Donut — R$ 3,00 ou R$ 15,00 <button onclick="pedir('Donut')">Pedir</button></li>
+
+<li>Sonho — R$ 6,50 ou R$ 9,50 <button onclick="pedir('Sonho')">Pedir</button></li>
+
+<li>Pastel Doce — R$ 7,90 <button onclick="pedir('Pastel Doce')">Pedir</button></li>
+
+<li>Cueca Virada — R$ 29,90 <button onclick="pedir('Cueca Virada')">Pedir</button></li>
+
+<li>Waffle — R$ 11,90 ou R$ 17,90 <button onclick="pedir('Waffle')">Pedir</button></li>
+
+<li>Panqueca Doce — R$ 8,00 ou R$ 12,00 <button onclick="pedir('Panqueca Doce')">Pedir</button></li>
+
+<li>Coxinha Doce — R$ 3,50 ou R$ 16,00 <button onclick="pedir('Coxinha Doce')">Pedir</button></li>
+
+</ul>
+
+</details>
+
+<details class="card">
+
+<summary>🇧🇷 Doces Tradicionais</summary>
+
+<ul>
+
+<li>Beijinho — R$ 1,40 ou R$ 2,25 <button onclick="pedir('Beijinho')">Pedir</button></li>
+
+<li>Quindim — R$ 5,00 ou R$ 11,00 <button onclick="pedir('Quindim')">Pedir</button></li>
+
+<li>Cocada — R$ 3,50 ou R$ 8,90 <button onclick="pedir('Cocada')">Pedir</button></li>
+
+<li>Doce de Leite — R$ 55,00 <button onclick="pedir('Doce de Leite')">Pedir</button></li>
+
+<li>Pé de Moleque — R$ 8,00 <button onclick="pedir('Pé de Moleque')">Pedir</button></li>
+
+<li>Paçoca — R$ 0,40 ou R$ 1,50 <button onclick="pedir('Paçoca')">Pedir</button></li>
+
+<li>Maria-Mole — R$ 3,00 <button onclick="pedir('Maria-Mole')">Pedir</button></li>
+
+<li>Goiabada — R$ 4,00 ou R$ 13,00 <button onclick="pedir('Goiabada')">Pedir</button></li>
+
+<li>Doce de Abóbora — R$ 30,00 <button onclick="pedir('Doce de Abóbora')">Pedir</button></li>
+
+<li>Bala de Coco — R$ 80,00 <button onclick="pedir('Bala de Coco')">Pedir</button></li>
+
+</ul>
+
+</details><section id="encomendas">
+
+<h2>Encomendas</h2>
+
+<p>
+✔ Escolha até 2 recheios e 1 massa.<br><br>
+
+✔ O pedido é confirmado mediante pagamento de 50% do valor.<br><br>
+
+✔ Aceitamos Pix, transferência e cartão de crédito.
+</p>
+
+</section>
+
+<section id="contato">
+
+<h2>Contato</h2>
+
+<p>📞 WhatsApp: (44) 1234-5678</p>
+
+<p>📷 Instagram: @docesonhodoceria80</p>
+
+<p>📍 Rua das Flores Roxas, nº 230 - Bairro Abelhas</p>
+
+</section>
+
+<footer>
+
+<h2>🍰 Doces Sonhos</h2>
+
+<p>Feito com ❤️ para adoçar seu dia.</p>
+
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/554412345678?text=Olá! Quero fazer um pedido."
+target="_blank">
+
+💬
+
+</a>
+
+<script>
+
+function pedir(produto){
+
+window.open(
+"https://wa.me/554412345678?text="+
+encodeURIComponent("Olá! Gostaria de pedir: "+produto),
+"_blank"
+);
+
+}
+
+const pesquisa=document.getElementById("pesquisa");
+
+pesquisa.addEventListener("keyup",function(){
+
+let texto=this.value.toLowerCase();
+
+let itens=document.querySelectorAll("li");
+
+itens.forEach(function(item){
+
+if(item.textContent.toLowerCase().includes(texto)){
+
+item.style.display="list-item";
+
+}else{
+
+item.style.display="none";
+
+}
+
+});
+
+});
+
+</script>
+
+</body>
+
+</html>
